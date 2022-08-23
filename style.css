@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=DynaPuff&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(167, 195, 240);
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voice {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(70, 70, 70);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(255, 255, 255);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.eng, .hindi{
+    font-size: 20px;
+    font-family: 'DynaPuff', cursive;
+    margin: 2.5px 10px;
+}
+
+
+img {
+  width: 70px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80px;
+  z-index: 1;
+}
+
+.clock {
+  position: relative;
+  background-color: rgb(255, 224, 185);
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  border: 5px solid rgb(223, 164, 90);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.numbers div {
+  position: absolute;
+  font-size: 37px;
+  font-family: "Baloo Bhaina 2", cursive;
+  font-weight: bold;
+  color: rgb(187, 103, 0);
+  text-shadow: 1px 1px 2px rgba(72, 40, 0, 0.8);
+}
+
+.one {
+  top: 10px;
+  right: 125px;
+  transform: translateX(-50%);
+}
+
+.two {
+  top: 75px;
+  right: 45px;
+  transform: translateX(-50%);
+}
+
+.three {
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.four {
+  bottom: 75px;
+  right: 55px;
+  transform: translateX(50%);
+}
+
+.five {
+  bottom: 5px;
+  right: 125px;
+  transform: translateX(50%);
+}
+
+.six {
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.seven {
+  bottom: 5px;
+  left: 125px;
+  transform: translateX(-50%);
+}
+
+.eight {
+  bottom: 85px;
+  left: 62px;
+  transform: translateX(-50%);
+}
+
+.nine {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ten {
+  top: 80px;
+  left: 55px;
+  transform: translateX(-50%);
+}
+
+.eleven {
+  top: 10px;
+  left: 130px;
+  transform: translateX(-50%);
+}
+
+.twelve {
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrows {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrows::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: rgb(97, 65, 24);
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  z-index: 5;
+}
+
+.arrows div {
+  background-color: white;
+  width: 10px;
+  position: absolute;
+  transform-origin: bottom center;
+  bottom: 50%;
+  border-radius: 50% 50% 0 0;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  background-color: rgb(255, 250, 220);
+}
+
+.hour {
+  height: 110px;
+  transform: rotate(30deg);
+  z-index: 2;
+}
+
+.minute {
+  height: 140px;
+  transform: rotate(0deg);
+  z-index: 3;
+}
+
+.second {
+  height: 190px;
+  transform: rotate(220deg);
+  z-index: 4;
+}
