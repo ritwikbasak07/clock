@@ -118,26 +118,26 @@ img {
 }
 
 .one {
-  top: 10px;
-  right: 125px;
+  top: 13px;
+  right: 105px;
   transform: translateX(-50%);
 }
 
 .two {
-  top: 75px;
-  right: 45px;
+  top: 95px;
+  right: 30px;
   transform: translateX(-50%);
 }
 
 .three {
   right: 15px;
-  top: 50%;
+  top: 50.5%;
   transform: translateY(-50%);
 }
 
 .four {
-  bottom: 75px;
-  right: 55px;
+  bottom: 80px;
+  right: 50px;
   transform: translateX(50%);
 }
 
@@ -167,19 +167,19 @@ img {
 
 .nine {
   left: 10px;
-  top: 50%;
+  top: 50.5%;
   transform: translateY(-50%);
 }
 
 .ten {
-  top: 80px;
-  left: 55px;
+  top: 92px;
+  left: 47px;
   transform: translateX(-50%);
 }
 
 .eleven {
-  top: 10px;
-  left: 130px;
+  top: 20px;
+  left: 120px;
   transform: translateX(-50%);
 }
 
